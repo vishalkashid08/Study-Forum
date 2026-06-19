@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* 🌌 Global Reset & Performance */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* Prevent blue highlight on mobile taps */
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* This deep color ensures the particle background looks premium */
+  background: #0b0e14; 
+  color: #ffffff;
+  min-height: 100vh;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* 💠 Global Link Styling */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+a:hover {
+  color: #6366f1; /* Neon Indigo */
+}
+
+/* 🔘 Global Button Reset */
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* 🖱 Custom Professional Selection Color */
+::selection {
+  background: rgba(99, 102, 241, 0.3);
+  color: #fff;
+}
+
+/* 🌊 Modern Hide/Show Utility for Glassmorphism */
+.glass-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* 🖼 Standard Image Polish */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* 🎈 Animated Keyframes for subtle background pulse */
+@keyframes pulse-glow {
+  0% { opacity: 0.5; }
+  50% { opacity: 0.8; }
+  100% { opacity: 0.5; }
+}
+
+/* This adds a very faint glowing blob in the background for extra "Amazing" feel */
+body::before {
+  content: "";
+  position: fixed;
+  top: -10%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+  z-index: -2;
+  animation: pulse-glow 8s infinite ease-in-out;
+}
