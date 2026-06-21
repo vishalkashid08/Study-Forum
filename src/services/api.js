@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:9090" // API Gateway Port
+  baseURL: "http://3.110.167.15:9090" // API Gateway Port
 });
 
 API.interceptors.request.use((req) => {
