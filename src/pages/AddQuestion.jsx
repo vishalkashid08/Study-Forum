@@ -17,7 +17,7 @@ function AskQuestion() {
 
     setLoading(true);
     try {
-      await axios.post("http://localhost:8082/questions", {
+      await axios.post("http://3.110.167.15:8082/questions", {
         title: title,
         description: description,
         userId: 1 // Ideally replaced with logged-in user ID
