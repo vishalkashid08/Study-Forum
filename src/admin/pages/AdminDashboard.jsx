@@ -27,7 +27,7 @@ function AdminDashboard() {
            * 1. URL changed to http://localhost:9090 (The API Gateway).
            * 2. Path changed to /users/stats to match your UserController @GetMapping("/stats").
            */
-          const response = await fetch("http://localhost:9090/users/stats", { 
+          const response = await fetch("http://http://3.110.167.15:9090/users/stats", { 
             method: "GET",
             headers: { 
               'Authorization': `Bearer ${token}`,
